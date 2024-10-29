@@ -29,7 +29,15 @@ public with sharing class FlowControlLoopsCollections {
      * @return "Hello World!" if x greater than y, otherwise return null.
      */
     public static String helloWorld(Integer x, Integer y) {
-        return null; // Replace null with the variable you used to store the result
+        String holaMundo;
+        if (X == null || y == null) {
+            holaMundo = null;
+        } else if(x > y){
+            holaMundo = 'Hello World!';
+        } else {
+            holaMundo = null;
+        }
+        return holaMundo; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -42,7 +50,13 @@ public with sharing class FlowControlLoopsCollections {
      * @return true if the person is eligible to vote, false otherwise.
      */
     public static Boolean votingEligibility(Integer age) {
-        return null; // Replace null with the variable you used to store the result
+        Boolean isEligible = null;
+        if (age >= 18) {
+            isEligible = true;
+        } else {
+            isEligible = false;
+        }
+        return isEligible; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -57,8 +71,14 @@ public with sharing class FlowControlLoopsCollections {
     public static Integer findMax(Integer num1, Integer num2) {
         // Initialize largestNum as null
         Integer largestNum = null;
-
-        return null; // Replace null with the variable you used to store the result
+        if (num1 > num2 || num1 == num2) {
+            largestNum = num1;
+        } else if (num2 > num1) {
+            largestNum = num2;
+        } else {
+            largestNum = null;
+        }
+        return largestNum; // Replace null with the variable you used to store the result
     }
 
 
@@ -71,7 +91,18 @@ public with sharing class FlowControlLoopsCollections {
      * @return A string indicating whether the number is "Positive", "Negative", or "Zero", or null if the number is null.
      */
     public static String checkNumber(Integer a) {
-        return null; // Replace null with the variable you used to store the result
+        String numberResult;
+        if (a > 0) {
+            numberResult = 'Positive';
+        } else if (a < 0) {
+            numberResult = 'Negative';
+        } else if (a == 0) {
+            numberResult = 'Zero';
+        } 
+        else {
+            numberResult = null;
+        }
+        return numberResult; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -83,7 +114,15 @@ public with sharing class FlowControlLoopsCollections {
      * @return A string indicating whether the number is "Even" or "Odd", or null if the number is null.
      */
     public static String checkEvenOdd(Integer a) {
-        return null; // Replace null with the variable you used to store the result
+        String isEven;
+        if (a == null) {
+            isEven = null;
+        } else if (Math.mod(a, 2) == 0) {
+            isEven = 'Even';
+        } else {
+            isEven = 'Odd';
+        }
+        return isEven; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -94,7 +133,15 @@ public with sharing class FlowControlLoopsCollections {
      * @return A string indicating whether the input is "Empty", "Null", or "Contains Text".
      */
     public static String checkString(String a) {
-        return null; // Replace null with the variable you used to store the result
+        String isEmpty;
+        if (a == null) {
+            isEmpty = 'Null';
+        } else if (a == '') {
+            isEmpty = 'Empty';
+        } else {
+            isEmpty = 'Contains Text';
+        }
+        return isEmpty; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -110,7 +157,19 @@ public with sharing class FlowControlLoopsCollections {
      * @return The grade for the given score.
      */
     public static String determineGrade(Integer score) {
-        return null; // Replace null with the variable you used to store the result
+        String scoreResult;
+        if (score >= 90) {
+            scoreResult = 'A';
+        } else if (score >= 80) {
+            scoreResult = 'B';
+        } else if (score >= 70) {
+            scoreResult = 'C';
+        } else if (score >= 60) {
+            scoreResult = 'D';
+        } else {
+            scoreResult = 'F';
+        }
+        return scoreResult; // Replace null with the variable you used to store the result
     }
 
 
