@@ -14,7 +14,7 @@
 * in flow control, loops, and collections. By mastering these concepts, developers will be able to write more
 * efficient and effective code in their Salesforce projects.
 *
-* @author Your Name
+* @author Bryan Moreno
 */
 
 public with sharing class FlowControlLoopsCollections {
@@ -181,12 +181,10 @@ public with sharing class FlowControlLoopsCollections {
      * @return The sum of all integers up to the limit.
      */
     public static Integer sumUpToLimit(Integer intLimit) {
-        /* 
-         for (){
+        // List<Integer> sumList = new List<Integer>(intLimit);
+        // for (){
             
-         }
-        */
-
+        //  }
         return null; // Replace null with the variable you used to store the result
     }
 
@@ -198,14 +196,7 @@ public with sharing class FlowControlLoopsCollections {
      */
     public static String returnHelloWorld() {
         // Initialize the result String
-
         // Use a for loop to append 'Hello World!;' to the result string three times
-        /* 
-         for (){
-            
-         }
-        */
-
         return null; // Replace null with the variable you used to store the result
     }
 
